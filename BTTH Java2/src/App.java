@@ -4,9 +4,8 @@ public class GiaiPTBacNhat {
     public static void main(String[] args) {
         int aNumber, bNumber;
         double nghiem;
-        DecimalFormat decimalFormat = new DecimalFormat("#.##");    // làm tròn đến 2 chữ số thập phân
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
         Scanner scanner = new Scanner(System.in);
- 
         System.out.println("Nhập vào số a: ");
         aNumber = scanner.nextInt();
         System.out.println("Nhập vào số b: ");
@@ -19,7 +18,7 @@ public class GiaiPTBacNhat {
                 System.out.println("Phương trình vô nghiệm.");
             }
         } else {
-            nghiem = (double) -bNumber / aNumber;   // ép kiểu để cho ra kết quả chính xác
+            nghiem = (double) -bNumber / aNumber;
             System.out.println("Phương trình có nghiệm x = " + decimalFormat.format(nghiem) + ".");
         }
         System.out.println("-----------------------------");
